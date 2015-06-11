@@ -1,0 +1,19 @@
+hours = raw_input("Enter Hours:")
+try:
+    inthours = float(hours)
+except:
+    print "Error, please enter numeric input"
+
+rate = raw_input("Enter your hourly rate:")
+try:
+    intrate = float(rate)
+except:
+    print "Error, please enter numeric input"
+
+try:
+    if inthours > 40.0 : 
+        print 1.5*intrate*inthours
+    else:
+        print intrate*inthours
+except:
+    print "Error, please enter numeric input"
