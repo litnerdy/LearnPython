@@ -1,0 +1,12 @@
+#Calculate pay, including if overtime happens
+hours = raw_input("Enter Hours:")
+inthours = float(hours)
+rate = raw_input("Enter your hourly rate:")
+intrate = float(rate)
+
+if inthours > 40.0 : 
+    overtime = inthours - 40.0
+    overtimepay = overtime * 1.5 * intrate
+    print overtimepay + intrate*40
+else:
+    print intrate*inthours
