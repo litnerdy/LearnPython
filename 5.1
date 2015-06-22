@@ -1,0 +1,21 @@
+#calculates the (float) average of user input numbers, using try/except to throw out non-numbers)
+
+count = 0
+total = 0
+
+while True:
+    number = raw_input("Enter a number: ")
+    if number == "done" :
+        break
+    try:
+        number = int(number)
+    except:
+        print "Invalid input"
+        continue
+    count = count + 1
+    total = total + number
+
+print total
+print count
+average = float(total)/float(count)
+print average
