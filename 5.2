@@ -1,0 +1,26 @@
+#prints largest and smallest of user input, and catches invalid input wiht try/except
+
+
+largest = None
+smallest = None
+
+while True:
+    num = raw_input("Enter a number: ")
+    if num == "done" :
+        break
+    try:
+        int(num)
+    except:
+        print "Invalid input"
+        continue
+    if num < smallest or smallest is None:
+        smallest = num
+    else :
+        num = num
+    if num > largest or largest is None:
+        largest = num
+    else:
+        continue
+    
+print "Maximum is", largest
+print "Minimum is", smallest
