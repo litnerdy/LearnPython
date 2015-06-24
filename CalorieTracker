@@ -1,0 +1,12 @@
+#track calories remaining in your daily diet
+#change the initial value of "caloriesleft" to your total desired calories per day
+#quit by entering "done" as the raw input
+
+caloriesleft = 1300
+while caloriesleft >= 0 :
+    calories = raw_input("Enter calories eaten")
+    calories = float(calories)
+    caloriesleft = caloriesleft-calories
+    print caloriesleft
+    if calories == "done" :
+        break
